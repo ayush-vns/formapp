@@ -13,4 +13,20 @@ class LoginManager {
         return true;
     }
 }
+class alldatas {
+    public static function showalldatas(){
+        $da = signup::all();
+
+        if (!$da) {
+            throw new Exception('error');
+        }
+
+        $response["status"] = "ok";
+
+        foreach ($da as $x) {
+            echo "$x <br>";
+          }
+    }
+}
+
 

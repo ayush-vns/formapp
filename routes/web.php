@@ -34,5 +34,11 @@ Route::get('/log', function () {
 // Route::get('/log', [AuthController::class,'isUsernamePasswordCorrect'] {
 //     return view('login');
 // });
+Route::post('/show', function () {
+    return view('showalldata');
+});
+Route::get('/show', function () {
+    return view('showalldata');
+});
 
 
